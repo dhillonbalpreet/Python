@@ -3,9 +3,11 @@ height = int(input("Enter your height in cm "))
 
 if height>=120:
   print("You can ride the roller coaster")
-  age = int(input("Enter your age ")
-  if age<18:
-    print("Your fair price is $7")
+  age = int(input("Enter your age "))
+  if age<=12:
+    print("Your fair price is $5")
+  elif age>15 && age <=18:
+    print("Your fair price is $5")
   else:
     print("Your fair price is $12")
 
