@@ -1,0 +1,7 @@
+print("Welcome to roller coaster")
+height = int(input("Enter your height in cm"))
+
+if height>=120:
+  print("You can ride the roller coaster")
+else:
+  print("Sorry your height is shorter than the minimum height allowed on roller coaster")
