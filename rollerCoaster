@@ -1,15 +1,23 @@
 print("Welcome to roller coaster")
 height = int(input("Enter your height in cm "))
-
+bill = 0
 if height>=120:
   print("You can ride the roller coaster")
   age = int(input("Enter your age "))
   if age<=12:
-    print("Your fair price is $5")
+    print("Child ticket is $5")
+    bill = 5
   elif age>15 && age <=18:
-    print("Your fair price is $5")
+    print("Youth is $5")
+    bill = 7
   else:
-    print("Your fair price is $12")
+    print("Adult is $12")
+    bill = 12
+  photo = input("Would you like to take a photo? Y or N")
+
+  if photo =="Y":
+    bill += 3
+    print(f" Your final bill is {bill}")
 
 else:
   print("Sorry your height is shorter than the minimum height allowed on roller coaster")
