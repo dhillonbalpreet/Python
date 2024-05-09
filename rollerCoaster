@@ -8,10 +8,13 @@ if height>=120:
     print("Child ticket is $5")
     bill = 5
   elif age <=18:
-    print("Youth is $5")
+    print("Youth ticket is $5")
     bill = 7
+  elif age>=45 and age <=55:
+    print("Everything is going to be ok. Have a free ride on us!")
+    bill = 0
   else:
-    print("Adult is $12")
+    print("Adult ticket is $12")
     bill = 12
   photo = input("Would you like to take a photo? Y or N")
 
