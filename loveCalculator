@@ -1,0 +1,30 @@
+name1 = input("Enter your name")
+name2 = input("Enter your partner's name")
+
+print("The Love Calculator is calculating your score")
+
+combinedName = name1 + name2
+lowerName =  combinedName.lower()
+
+t = lowerName.count("t")
+r = lowerName.count("r")
+u = lowerName.count("u")
+e = lowerName.count("e")
+
+firstDigit = t+r+u+e
+
+l = lowerName.count("l")
+o = lowerName.count("o")
+v = lowerName.count("v")
+
+secondDigit = l+o+v+e
+
+#print(f" Your true love percnetage is {firstDigit}{secondDigit}")
+score = int( str(firstDigit) + str(secondDigit))
+
+if((score<10) or (score>90)):
+ print(f" Your true love percnetage is {score}, You go together like coke and mentos.")
+elif((score>=40)or (score<=50)):
+ print(f" Your true love percnetage is {score}, You are alright together.")
+else:
+ print(f" Your true love percnetage is {score}")
